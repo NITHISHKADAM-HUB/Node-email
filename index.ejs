@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container d-flex justify-content-center align-items-center mt-5">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 col-xl-4 offset-xl-4">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Email</h5>
+                        <form action="/send" method="POST">
+                            <div class="mb-3">
+                                <label class="form-label" for="name">Name</label>
+                                <input class="form-control" type="text" id="name" name="name" autofocus required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label" for="toEmail">To Email Address</label>
+                                <input class="form-control" type="email" id="toEmail" name="toEmail" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label" for="subject">Subject</label>
+                                <input class="form-control" type="text" id="subject" name="subject" autofocus required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label" for="message">Message</label>
+                                <textarea class="form-label" name="message" rows="5" cols="30" required></textarea>
+                            </div>
+
+                            <button class="btn btn-success btn-block" type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <form action="/logout?_method=DELETE" method="POST">
+        <div class="text-right">
+            <button type="submit" class="btn btn-danger">Log Out</button>
+        </div>
+    </form>
+
+</body>
+
+</html>
