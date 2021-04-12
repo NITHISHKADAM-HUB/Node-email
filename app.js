@@ -92,7 +92,6 @@ app.post('/send', async (req, res) => {
     });
     res.redirect(req.get('referer'));
 })
-
 app.delete('/logout', (req, res) => {
     req.logOut()
     res.redirect('/login')
