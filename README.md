@@ -1,2 +1,2 @@
 # Node-email
-using nodemailer to send dynamic emails.
+Using nodemailer to send dynamic emails.
